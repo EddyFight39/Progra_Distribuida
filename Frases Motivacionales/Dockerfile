@@ -9,7 +9,7 @@ COPY numeroaleatorio.py /app/
 COPY requirements.txt /app/
 
 # Instalar las dependencias
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Ejecutar el script de Python
 CMD ["python", "numeroaleatorio.py"]
