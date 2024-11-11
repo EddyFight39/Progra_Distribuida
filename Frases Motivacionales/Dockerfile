@@ -4,7 +4,7 @@ FROM python:3.12-slim
 # Establecer el directorio de trabajo en el contenedor
 WORKDIR /app
 
-# Copiar el archivo Python correcto al contenedor
+# Copiar los archivos del proyecto al contenedor
 COPY numeroaleatorio.py /app/
 COPY requirements.txt /app/
 
