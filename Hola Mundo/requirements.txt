@@ -1,0 +1,1 @@
+# No necesitamos dependencias para este proyecto simple
