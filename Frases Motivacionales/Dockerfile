@@ -6,6 +6,10 @@ WORKDIR /app
 
 # Copiar el archivo Python correcto al contenedor
 COPY numeroaleatorio.py /app/
+COPY requirements.txt /app/
+
+# Instalar las dependencias
+RUN pip install -r requirements.txt
 
 # Ejecutar el script de Python
 CMD ["python", "numeroaleatorio.py"]
