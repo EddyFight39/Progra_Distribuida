@@ -5,11 +5,7 @@ FROM python:3.12-slim
 WORKDIR /app
 
 # Copiar los archivos del proyecto al contenedor
-COPY numeroaleatorio.py /app/
-COPY requirements.txt /app/
+COPY . /app/
 
-# Instalar las dependencias
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Ejecutar el script de Python
+# Comando para ejecutar el script
 CMD ["python", "numeroaleatorio.py"]
