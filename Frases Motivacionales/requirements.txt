@@ -1,1 +1,1 @@
-echo "Flask" > requirements.txt  # si estás utilizando Flask o cualquier otra librería
+
